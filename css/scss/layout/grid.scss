@@ -1,0 +1,52 @@
+// font-family: 'Domine', serif;
+// font-family: 'Metrophobic', sans-serif;
+html,
+body {
+    overflow-x: hidden !important;
+}
+body{
+    overflow-y: hidden
+}
+.metro {
+    font-family: 'Metrophobic', sans-serif;
+}
+
+.domaine {
+    font-family: 'Domine', serif;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+    &:hover {
+        text-decoration: none;
+        color: inherit
+    }
+}
+
+span {
+    transition: 0.6s all ease-in-out;
+    color: $main-color;
+    &:hover {
+        color: $main-color !important;
+    }
+}
+
+.main-color {
+    color: $main-color !important
+}
+
+.main-color-background {
+    &:hover {
+        color: #000 !important;
+    }
+    background-color: $main-color
+}
+
+p {
+    transition: 0.5s all ease-in-out;
+    line-height: 2.2rem;
+    font-size: 1rem;
+
+
+}

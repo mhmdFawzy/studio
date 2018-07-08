@@ -1,0 +1,192 @@
+#two {
+    .step:hover {
+        .badge-circle {
+            color: #000 !important;
+            &:after {
+                position: absolute;
+                content: "";
+                top: 0;
+                border-left: 2px solid #cc147f;
+                height: 4rem;
+                transform: rotateZ(270deg);
+                right: 0;
+                left: 400%;
+            }
+        }
+    }
+    h3 span {
+        letter-spacing: 0.15rem
+    }
+    .badge-circle {
+        font-size: 2rem;
+        text-align: center;
+        height: 48px;
+        position: relative;
+        width: 48px;
+        line-height: 48px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 18px #ffffff;
+        &:after {
+            transition: 0.5s all ease-in-out;
+            position: absolute;
+            content: "";
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100%;
+            border-left: 2px solid $main-color;
+            height: 2rem;
+        }
+    }
+}
+
+#four {
+    .grid-item:hover {
+        .project-data {
+            left: 0%;
+        }
+        .project-data-p {
+            bottom: 2%
+        }
+        .project-data,
+        .project-data-p {
+            opacity: 1;
+        }
+        .overlay {
+            opacity: 1;
+        }
+    }
+    .img-details {
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.9);
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(248, 227, 227, 0.4);
+            opacity: 0;
+            transition: 0.4s all linear;
+        }
+        .project-data,
+        .project-data-p {
+            position: absolute;
+            opacity: 0;
+            transition: 0.4s all linear;
+        }
+        .project-data {
+            left: -50%;
+        }
+        .project-data-p {
+            bottom: 100%;
+            transition-delay: 0.3s;
+        }
+    }
+}
+
+#five {
+    .swiper-container {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height: 300px;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+}
+
+#six {
+    background-image: url(../../img/marshal.jpeg);
+    background-position: center;
+    position: relative;
+    h4 {
+        &:after {
+            display: block;
+            content: "";
+            height: 3px;
+            width: 100px;
+            background-color: rgba(255, 255, 255, 0.1);
+            position: absolute;
+            bottom: 30%;
+            left: 50%;
+            margin-left: -50px;
+        }
+    }
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(000, 000, 000, 0.6);
+        left: 0;
+        top: 0
+    }
+    span.counter {
+        font-size: 5.2rem;
+        line-height: 1;
+        padding-bottom: 1.8rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        position: relative;
+    }
+}
+
+#seven {
+    background-color: #111111;
+    .email{
+        @media (max-width: 875px) {
+            font-size: 2.1rem;
+        }
+    }
+    .contact-subscribe {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        .s-form {
+            margin-top: 2.1rem;
+            width: 100%;
+        }
+        input[type="email"] {
+            background-color: rgba(0, 0, 0, 0.2);
+            color: rgba(255, 255, 255, 0.5);
+            width: 100%;
+            height: 3.4rem;
+            padding: 1.2rem 150px 1.2rem 20px;
+            margin-bottom: 1.8rem;
+            border: none;
+            &:focus {
+                border: none;
+                outline: none;
+            }
+        }
+   
+        input[type="submit"] {
+            color: #ffffff;
+            background: #cc147f;
+            border-color: #cc147f;
+            padding: 0 15px;
+            position: absolute;
+            top: 0;
+            height: 3.4rem;
+            right: 0;
+            &:focus {
+                border: none;
+            }
+        }
+    }
+}

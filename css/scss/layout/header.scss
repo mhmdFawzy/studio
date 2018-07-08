@@ -1,0 +1,119 @@
+#one {
+    height: 100vh;
+    position: relative;
+    .carousel {
+        height: 100vh;
+        img {
+            width: 100vw;
+            height: 100vh;
+        }
+    }
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        z-index: 9;
+    }
+    .header-menu {
+        position: absolute;
+        top: 0;
+        z-index: 99;
+        nav {
+            background: transparent !important;
+            button.open-menu {
+                border: none;
+                right: 0;
+            }
+            .navbar-collapse {
+                position: absolute;
+                right: -18rem;
+                display: inline !important;
+                padding: 50px;
+                width: 16rem;
+                top: 0;
+                height: 100vh;
+                transition: 0.8s ease-in-out all;
+                ol {
+                    color: #fff
+                }
+                hr {
+                    border-top: 1px solid rgba($color: #fff, $alpha: 0.4);
+                    width: 100%;
+                    transition: 0.8s ease-in-out all;
+                }
+            }
+            .appear-menu {
+                position: fixed;
+                display: inline;
+                padding: 50px;
+                top: 0;
+                right: 0;
+                background: #000a00;
+                width: 18rem;
+                height: 100vh; // left: calc(100vw - 18rem);
+                transition: 0.8s all ease-in-out;
+                color: #fff
+            }
+        }
+    }
+    .home-sidelinks {
+        position: absolute;
+        font-size: 1.1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 99;
+        line-height: 1.5;
+        font-weight: 100;
+        right: 0;
+        letter-spacing: 2px;
+        text-align: justify;
+        background-color: rgba(0, 0, 0, 0.3);
+        li {
+            border-top: 1px solid transparent;
+            span {
+                font-size: 0.8rem;
+            }
+            a,
+            span {
+                padding: 1.1rem 10rem 1.1rem 2rem;
+            }
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+                border-top: 1px solid $main-color;
+            }
+        }
+    }
+    .welcome-msg {
+        z-index: 500;
+        top: 30%;
+        position: absolute;
+        left: 40%;
+        transform: translateX(-50%);
+        font-family: 'Domine', serif;
+        font-size: 6rem;
+        line-height: 1.1;
+        color: #ffffff;
+        font-weight: bold;
+        @media (max-width: 1199px) {
+            font-size: 5rem;
+        }
+        @media (max-width: 556px) {
+            font-size: 3rem;
+        }
+    }
+    .down {
+        font-size: 4rem;
+        z-index: 9999;
+        position: absolute;
+        top: 85%;
+        color: white;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.2s all ease-in;
+        a:hover {
+            border: 2px solid $main-color;
+            border-radius: 1.5rem
+        }
+    }
+}
